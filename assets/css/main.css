@@ -1,0 +1,144 @@
+@import url('fonts.css');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Gilroy-Bold';
+    background-color: #0B1D26;
+    color: #fff;
+}
+
+.background-img {
+    background-image: url("./../img/BG.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.header {
+    padding-top: 64px;
+}
+
+.nav-wrapper {
+    margin-bottom: 200px;
+}
+.container-wide {
+    width: 1790px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Chronicle-Display-Bold';
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.nav-menu {
+    font-size: 18px;
+}
+
+.nav-menu ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav-menu li + li {
+    margin-left: 40px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease-in;
+
+}
+
+.nav-menu a:hover {
+    color: #FBD784;
+}
+
+.account a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.2s ease-in;
+}
+
+.account a:hover {
+    color: #FBD784;
+}
+
+/* HERO */
+
+.hero {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.hero-category {
+    position: relative;
+    color: #FBD784;
+    padding-left: 104px;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.hero-category::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    content: "";
+    width: 72px;
+    height: 2px;
+    background-color: #FBD784;
+}
+
+.hero-title {
+    font-family: 'Chronicle-Display-Semibold';
+    font-size: 88px;
+    line-height: 1.13;
+    text-transform: capitalize;
+}
+
+
+.hero-scroll {
+    display: inline-block;
+    position: relative;
+}
+
+.hero-scroll a {
+    padding-right: 32px;
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    line-height: 1.222;
+}
+
+.hero-scroll::after {
+    display: block;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 24px;
+    background-image: url('./../img/arrow_down.svg');
+}
